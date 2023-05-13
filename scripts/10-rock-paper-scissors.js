@@ -96,11 +96,26 @@ function pickComputerMove() {
   return computerMove;
 }
 
+function clearResultText() {
+  clearResultClass();
+
+  document.querySelector('.js-moves')
+    .innerHTML = ` `;
+
+  document.querySelector('.js-moves')
+    .innerHTML = ` `;
+  
+  document.querySelector('.js-result')
+    .innerHTML = `Your score is reset. Play again!`;
+}
+
 function resetScore() {
   score.wins = 0;
   score.losses = 0;
   score.ties = 0;
   localStorage.removeItem('score');
+
+  clearResultText();
 
   updateScoreElement();
 }    
