@@ -101,9 +101,6 @@ function clearResultText() {
 
   document.querySelector('.js-moves')
     .innerHTML = ` `;
-
-  document.querySelector('.js-moves')
-    .innerHTML = ` `;
   
   document.querySelector('.js-result')
     .innerHTML = `Your score is reset. Play again!`;
